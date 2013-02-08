@@ -8,7 +8,7 @@ use namespace::autoclean;
 use Continuum;
 use Mojo::Redis;
 
-use version; our $VERSION = version->declare("v0.0.2"); 
+use version; our $VERSION = version->declare("v0.0.1"); 
 
 has redis => (
     is => 'ro',
