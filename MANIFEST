@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README.md
+UNLICENSE
+t/Continuum-Redis.t
+lib/Continuum/Redis.pm
