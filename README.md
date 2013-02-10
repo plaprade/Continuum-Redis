@@ -39,6 +39,10 @@ Please head to the [Continuum](http://github.com/ciphermonk/Continuum)
 project page for more details. You can get a list of all the Redis
 commands at [Mojo::Redis](http://search.cpan.org/perldoc?Mojo::Redis).
 
+The `subscribe` call behaves in the same way as the `subscribe` call
+in `Mojo::Redis`. It doesn't return a Portal. It is the only
+exception.
+
 ## Bugs
 
 Please report any bugs in the projects bug tracker:

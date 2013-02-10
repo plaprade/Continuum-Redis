@@ -8,7 +8,7 @@ use namespace::autoclean;
 use Continuum;
 use Mojo::Redis;
 
-use version; our $VERSION = version->declare("v0.0.1"); 
+use version; our $VERSION = version->declare("v0.0.2"); 
 
 has redis => (
     is => 'ro',
@@ -20,6 +20,12 @@ sub BUILDARGS {
     +{ redis => Mojo::Redis->new( @_ ) }
 }
 
+# Use non-portal semantics for subscribe
+sub subscribe {
+    my ( $self, @args ) = @_;
+    $self->redis->subscribe( @args );
+}
+
 # Builds a Portal from a Redis call
 # Usage: $redis->get( $key )->then( ... )
 sub AUTOLOAD {
@@ -28,7 +34,7 @@ sub AUTOLOAD {
     $method =~ s/_//g;
     portal( sub {
         my $jump = $jump;
-        $self->redis->$method( @args, sub {
+        $self->redis->execute( $method => @args => sub {
             my ( $redis, @results ) = @_;
             $jump->( @results );
         })
@@ -79,6 +85,10 @@ a rich API for handling asynchronous operations.
 Please head to the L<Continuum|http://github.com/ciphermonk/Continuum>
 project page for more details. You can get a list of all the Redis
 commands at L<Mojo::Redis>.
+
+The C<subscribe> call behaves in the same way as the C<subscribe> call
+in C<Mojo::Redis>. It doesn't return a Portal. It is the only
+exception.
 
 =head2 Bugs
 
