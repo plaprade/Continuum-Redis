@@ -34,7 +34,7 @@ sub AUTOLOAD {
     $method =~ s/_//g;
     portal( sub {
         my $jump = $jump;
-        $self->redis->execute( $method => @args => sub {
+        $self->redis->$method( @args => sub {
             my ( $redis, @results ) = @_;
             $jump->( @results );
         })
