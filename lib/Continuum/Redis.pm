@@ -26,6 +26,12 @@ sub subscribe {
     $self->redis->subscribe( @args );
 }
 
+# Use non-portal semantics for execute
+sub execute {
+    my ( $self, @args ) = @_;
+    $self->redis->execute( @args );
+}
+
 # Builds a Portal from a Redis call
 # Usage: $redis->get( $key )->then( ... )
 sub AUTOLOAD {
@@ -87,8 +93,9 @@ project page for more details. You can get a list of all the Redis
 commands at L<Mojo::Redis>.
 
 The C<subscribe> call behaves in the same way as the C<subscribe> call
-in C<Mojo::Redis>. It doesn't return a Portal. It is the only
-exception.
+in C<Mojo::Redis>. It doesn't return a Portal. The same applies for
+the C<execute> call. This can be helpful if you need to bypass the
+Portals for specific exceptions.
 
 =head2 Bugs
 
