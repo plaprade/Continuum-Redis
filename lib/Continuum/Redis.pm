@@ -132,14 +132,22 @@ Open a pull request
 
 This module depends on these other modules:
 
-* L<Moose|http://metacpan.org/module/Moose>
-* L<Contnuum|https://github.com/ciphermonk/Continuum>
-* L<Mojo::Redis|https://metacpan.org/module/Mojo::Redis>
-* L<namespace::autoclean|https://metacpan.org/module/namespace::autoclean>
+=over
+
+=item L<Moose|http://metacpan.org/module/Moose>
+=item L<Contnuum|https://github.com/ciphermonk/Continuum>
+=item L<Mojo::Redis|https://metacpan.org/module/Mojo::Redis>
+=item L<namespace::autoclean|https://metacpan.org/module/namespace::autoclean>
+
+=back
 
 For testing:
 
-* L<EV|https://metacpan.org/module/EV>
+=over
+
+=item L<EV|https://metacpan.org/module/EV>
+
+=back
 
 =head2 Supporting
 
