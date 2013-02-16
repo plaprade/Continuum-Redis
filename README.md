@@ -40,8 +40,9 @@ project page for more details. You can get a list of all the Redis
 commands at [Mojo::Redis](http://search.cpan.org/perldoc?Mojo::Redis).
 
 The `subscribe` call behaves in the same way as the `subscribe` call
-in `Mojo::Redis`. It doesn't return a Portal. It is the only
-exception.
+in `Mojo::Redis`. It doesn't return a Portal. The same applies for
+the `execute` call. This can be helpful if you need to bypass the
+Portals for specific exceptions.
 
 ## Bugs
 
@@ -60,6 +61,19 @@ We're glad you want to contribute! It's simple:
 - Commit your changes `git commit -am 'comments'`
 - Push the branch `git push origin my_branch`
 - Open a pull request
+
+## Installation
+
+This module depends on these other modules:
+
+- [Moose](http://metacpan.org/module/Moose)
+- [Contnuum](https://github.com/ciphermonk/Continuum)
+- [Mojo::Redis](https://metacpan.org/module/Mojo::Redis)
+- [namespace::autoclean](https://metacpan.org/module/namespace::autoclean)
+
+For testing:
+
+- [EV](https://metacpan.org/module/EV)
 
 ## Supporting
 
