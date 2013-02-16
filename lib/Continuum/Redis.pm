@@ -134,10 +134,17 @@ This module depends on these other modules:
 
 =over
 
-=item L<Moose|http://metacpan.org/module/Moose>
-=item L<Contnuum|https://github.com/ciphermonk/Continuum>
-=item L<Mojo::Redis|https://metacpan.org/module/Mojo::Redis>
-=item L<namespace::autoclean|https://metacpan.org/module/namespace::autoclean>
+=item *
+L<Moose|http://metacpan.org/module/Moose>
+
+=item *
+L<Contnuum|https://github.com/ciphermonk/Continuum>
+
+=item *
+L<Mojo::Redis|https://metacpan.org/module/Mojo::Redis>
+
+=item *
+L<namespace::autoclean|https://metacpan.org/module/namespace::autoclean>
 
 =back
 
@@ -145,7 +152,8 @@ For testing:
 
 =over
 
-=item L<EV|https://metacpan.org/module/EV>
+=item *
+L<EV|https://metacpan.org/module/EV>
 
 =back
 
