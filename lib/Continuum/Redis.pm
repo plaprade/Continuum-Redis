@@ -128,6 +128,19 @@ Open a pull request
 
 =back
 
+=head2 Installation
+
+This module depends on these other modules:
+
+* L<Moose|http://metacpan.org/module/Moose>
+* L<Contnuum|https://github.com/ciphermonk/Continuum>
+* L<Mojo::Redis|https://metacpan.org/module/Mojo::Redis>
+* L<namespace::autoclean|https://metacpan.org/module/namespace::autoclean>
+
+For testing:
+
+* L<EV|https://metacpan.org/module/EV>
+
 =head2 Supporting
 
 Like what you see? You can support the project by donating in
