@@ -67,9 +67,9 @@ We're glad you want to contribute! It's simple:
 This module depends on these other modules:
 
 - [Moose](http://metacpan.org/module/Moose)
-=item [Contnuum](https://github.com/ciphermonk/Continuum)
-=item [Mojo::Redis](https://metacpan.org/module/Mojo::Redis)
-=item [namespace::autoclean](https://metacpan.org/module/namespace::autoclean)
+- [Contnuum](https://github.com/ciphermonk/Continuum)
+- [Mojo::Redis](https://metacpan.org/module/Mojo::Redis)
+- [namespace::autoclean](https://metacpan.org/module/namespace::autoclean)
 
 For testing:
 
