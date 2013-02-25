@@ -37,7 +37,7 @@ is_deeply(
 );
 
 portal( map { 
-    $redis->hdel( _perl_test => $_ => $_ ) 
+    $redis->hdel( _perl_test => $_ ) 
 } 1..10 )->recv;
 
 is_deeply(
