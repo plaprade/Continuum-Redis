@@ -52,7 +52,11 @@ __PACKAGE__->meta->make_immutable;
 
 __END__
 
-=head1 Continuum::Redis - Continuum wrapper for Mojo::Redis
+=head1 NAME
+
+Continuum::Redis - Continuum wrapper for Mojo::Redis
+
+=head1 DESCRIPTION
 
 Continuum::Redis is a
 L<Continuum|http://github.com/ciphermonk/Continuum> wrapper around the
