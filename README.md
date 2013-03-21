@@ -1,4 +1,8 @@
-# Continuum::Redis - Continuum wrapper for Mojo::Redis
+# NAME
+
+Continuum::Redis - Continuum wrapper for Mojo::Redis
+
+# DESCRIPTION
 
 Continuum::Redis is a
 [Continuum](http://github.com/ciphermonk/Continuum) wrapper around the
