@@ -29,13 +29,13 @@ a rich API for handling asynchronous operations.
     $redis->get( $key1 )
         ->merge( $redis->get( $key2 ) )
         ->then( sub {
-            my ( $value1, $value2 ) = @\_;
+            my ( $value1, $value2 ) = @_;
         });
 
     # Fetch list of keys in parallel
-    portal( map { $redis->get( $\_ ) } @keys )
+    portal( map { $redis->get( $_ ) } @keys )
         ->then( sub {
-            my @values = @\_;
+            my @values = @_;
         });
 ```
 
@@ -61,9 +61,9 @@ You can also submit a patch.
 We're glad you want to contribute! It's simple:
 
 - Fork Continuum::Redis
-- Create a branch `git checkout -b my\_branch`
+- Create a branch `git checkout -b my_branch`
 - Commit your changes `git commit -am 'comments'`
-- Push the branch `git push origin my\_branch`
+- Push the branch `git push origin my_branch`
 - Open a pull request
 
 ## Installation
