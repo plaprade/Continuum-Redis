@@ -80,10 +80,3 @@ This module depends on these other modules:
 For testing:
 
 - [EV](https://metacpan.org/module/EV)
-
-## Supporting
-
-Like what you see? You can support the project by donating in
-[Bitcoins](http://www.weusecoins.com/) to:
-
-__17YWBJUHaiLjZWaCyPwcV8CJDpfoFzc8Gi__
