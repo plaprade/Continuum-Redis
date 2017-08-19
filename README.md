@@ -1,3 +1,5 @@
+Continuum::Redis has been discontinued and kept here for historical reasons
+
 # NAME
 
 Continuum::Redis - Continuum wrapper for Mojo::Redis
